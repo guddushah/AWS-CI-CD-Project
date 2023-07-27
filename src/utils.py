@@ -1,0 +1,3 @@
+## any commom functionalities or used in the entire application
+## reading the dataset, creating a mongodb client
+## save my model in the cloud....
