@@ -25,7 +25,7 @@ class Customdata:
      # mapping the data entered in the html to the backend
     def __init__(self, gender:str,
                 race_ethnicity:int,
-                parental_level_of_education:str,
+                parental_level_of_education,
                 lunch: str,
                 test_preparation_course:str,
                 reading_score:int,
@@ -42,13 +42,13 @@ class Customdata:
     def get_data_as_data_frame(self): # converting the input data to dataframe by converting into a dictionary
         try:
             custom_data_input_dict={
-           'gender': [self.gender],
-           'race_ethnicity':[self.race_ethnicity],
-           'parental_level_of_education': [self.parental_level_of_education],
-           'lunch': [self.lunch],
-           'test_preparation_course': [self.test_preparation_course],
-           'reading_score': [self.reading_score],
-           'writing_score': [self.writing_score]
+               'gender': [self.gender],
+               'race_ethnicity':[self.race_ethnicity],
+               'parental_level_of_education': [self.parental_level_of_education],
+               'lunch': [self.lunch],
+               'test_preparation_course': [self.test_preparation_course],
+               'reading_score': [self.reading_score],
+               'writing_score': [self.writing_score],
             }
 
             return pd.DataFrame(custom_data_input_dict)
